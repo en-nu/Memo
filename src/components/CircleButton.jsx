@@ -2,9 +2,9 @@ import React from "react";
 import {View,Text,StyleSheet} from 'react-native';
 
 export default function(props){
-    const {children} =props;
+    const {children,style} =props;
     return(
-        <View style={styles.circleButton}>
+      <View style={[styles.circleButton, style]}>
         <Text style={styles.CircleButtonLabel}>{children}</Text>
       </View>
 
