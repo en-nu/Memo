@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, } from 'react-native';
 
 import MemoListScreen from './src/screens/MemoListScreen';
 import MemoDetailScreen from './src/screens/MemoDetailScreen';
@@ -12,7 +12,7 @@ import SignUpScreen from './src/screens/SignUpScreen';
 
 export default function App() {
   return (
-    <SignUpScreen />
+    <MemoListScreen />
     );
 }
 

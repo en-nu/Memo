@@ -1,15 +1,15 @@
 import React from "react";
-import {View,Text,StyleSheet} from 'react-native';
+import {View,Text,StyleSheet,TouchableOpacity} from 'react-native';
 import { AntDesign } from '@expo/vector-icons'; 
 import { Feather } from '@expo/vector-icons';
 
 
 export default function(props){
-    const {style, name} =props;
+    const {style, name, onPress} =props;
     return(
-      <View style={[styles.circleButton, style]}>
+      <TouchableOpacity style={[styles.circleButton, style]} onPress={onPress}>
           <Feather name={name} size={32} color="white" />
-      </View>
+      </TouchableOpacity>
 
     );
 }
